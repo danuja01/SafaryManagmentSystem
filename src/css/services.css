@@ -1,0 +1,107 @@
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    margin: 30px 35px 100px;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    margin: 30px 35px 5px;
+}
+
+h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+
+/* flex item boxes */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* titles */
+
+.title-div {
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    margin: 10rem 0 0;
+}
+
+.title {
+    width: 600px;
+    text-align: center;
+}
+
+.title02-div {
+    display: flex;
+    height: 80px;
+    justify-content: center;
+}
+
+.hr-title {
+    align-content: center;
+    width: 50rem;
+}
+
+.hr2-title {
+    width: 190px;
+    align-content: center;
+}
+
+
+/* contents */
+
+.content-dic {
+    display: flex;
+    justify-content: center;
+    margin: 7rem 0;
+}
+
+.content {
+    text-align: center;
+    width: 800px;
+}
+
+
+/* Button */
+
+.btn {
+    background-color: #171717;
+    border: 1px solid;
+    color: white;
+    padding: 15px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.btn:hover {
+    border: 1px solid;
+    border-color: #171717;
+    background-color: transparent;
+    color: #171717;
+}
+
+.btn-div {
+    display: flex;
+    justify-content: center;
+    margin: 10rem;
+}
+
+.top-img {
+    margin: 10px;
+}
+
+.img-div {
+    display: flex;
+    justify-content: center;
+}

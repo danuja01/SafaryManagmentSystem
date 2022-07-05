@@ -1,0 +1,110 @@
+h1 {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: black;
+}
+
+h3 {
+    color: black;
+}
+
+.H_img {
+    height: 200px;
+    width: 300px;
+}
+
+ul {
+    color: grey;
+}
+
+.head-title {
+    margin: 50px 35px 60px;
+}
+
+
+/* card set */
+
+.card-set {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* cart style */
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 50px;
+    /* text-align: center; */
+    font-family: arial;
+}
+
+.card-head {
+    font-size: 35px;
+}
+
+.title {
+    color: grey;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-opt {
+    text-align: center;
+}
+
+.btn-card {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+.btn-card:hover,
+a:hover {
+    opacity: 0.7;
+}
+
+
+/* Skip/Next button */
+
+.btn-div {
+    padding: 5rem 10rem;
+    justify-content: center;
+    display: flex;
+}
+
+.btn-next {
+    background-color: #171717;
+    border: 1px solid;
+    color: white;
+    padding: 15px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.btn-next:hover {
+    border: 1px solid;
+    border-color: #171717;
+    background-color: transparent;
+    color: #171717;
+}

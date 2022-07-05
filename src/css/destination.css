@@ -1,0 +1,372 @@
+h1 {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.title {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    margin: 30px 35px 20px;
+}
+
+
+/* select items */
+
+.des-select {
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+/* ////////////////////////SELECT DROP DOWN///////////////////////////// */
+
+
+/*the container must be positioned relative:*/
+
+.custom-select {
+    position: relative;
+    font-family: Arial;
+}
+
+.custom-select select {
+    display: none;
+    /*hide original SELECT element:*/
+}
+
+.select-selected {
+    background-color: #171717;
+}
+
+
+/*style the arrow inside the select element:*/
+
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+
+
+/*point the arrow upwards when the select box is open (active):*/
+
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+
+
+/*style the items (options), including the selected item:*/
+
+.select-items div,
+.select-selected {
+    color: #ffffff;
+    padding: 10px 17px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+/*style items (options):*/
+
+.select-items {
+    position: absolute;
+    background-color: #171717;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+
+/*hide the items when the select box is closed:*/
+
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+/* ///////////////////////////////////////////////////// */
+
+.date {
+    background-color: #171717;
+    border: 1px solid;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.nop {
+    background-color: #171717;
+    border: 1px solid;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+}
+
+
+/* next button */
+
+.div-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.nxt-btn {
+    background-color: #171717;
+    border: 1px solid;
+    color: white;
+    padding: 15px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.nxt-btn:hover {
+    border: 1px solid;
+    border-color: #171717;
+    background-color: transparent;
+    color: #171717;
+}
+
+
+/* card */
+
+.card-set {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* cart style */
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 50px;
+    /* text-align: center; */
+    font-family: arial;
+}
+
+.card-head {
+    font-size: 20px;
+}
+
+.card-opt {
+    text-align: center;
+}
+
+.hr {
+    margin: 8rem 0 1rem;
+}
+
+
+/* popup button */
+
+.box {
+    width: 40%;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 35px;
+    border: 2px solid #fff;
+    border-radius: 20px/50px;
+    background-clip: padding-box;
+    text-align: center;
+}
+
+.btn-popup {
+    outline: 0;
+    display: inline-block;
+    padding: 8px 0px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    /* align-items: center; */
+    font-size: 18px;
+}
+
+.btn-popup:hover {
+    opacity: 0.7;
+    color: white;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover {
+    color: #171717;
+}
+
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+
+@media screen and (max-width: 700px) {
+    .box {
+        width: 70%;
+    }
+    .popup {
+        width: 70%;
+    }
+}
+
+.btn-addcart {
+    /* display: inline-block; */
+    font-weight: 400;
+    line-height: 1.5;
+    color: #f1f1f1;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #171717;
+    border: 1px none;
+    padding: 0.5rem 1rem;
+    font-size: 1.8rem;
+    border-radius: 0.5rem;
+    /* float: left; */
+    margin: 20px;
+}
+
+.btn-addcart:hover {
+    border: 1px solid;
+    border-color: #171717;
+    background-color: transparent;
+    color: #171717;
+}
+
+.card-set {
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+/* cart style */
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 50px;
+    /* text-align: center; */
+    font-family: arial;
+}
+
+.card-head {
+    font-size: 35px;
+}
+
+.title {
+    color: grey;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-opt {
+    text-align: center;
+}
+
+.btn-card {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+.btn-card:hover,
+a:hover {
+    opacity: 0.7;
+}
+
+
+/* Skip/Next button */
+
+.btn-div {
+    padding: 5rem 10rem;
+    justify-content: center;
+    display: flex;
+}

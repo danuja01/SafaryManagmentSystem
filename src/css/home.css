@@ -1,0 +1,270 @@
+/* flip box 1 */
+
+.flip-box1 {
+    background-color: transparent;
+    width: 380px;
+    height: 550px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+}
+
+.flip-box1-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-box1:hover .flip-box1-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-box1-front,
+.flip-box1-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-box1-front {
+    background-color: #bbb;
+    background-image: url("../images/home/yala\ National\ park\ \(1\).jpg");
+    color: black;
+}
+
+.flip-box1-back {
+    background-color: dodgerblue;
+    color: white;
+    background-image: url("../images/home/1.jpg");
+    transform: rotateY(180deg);
+}
+
+
+/* flip box 2 */
+
+.flip-box2 {
+    background-color: transparent;
+    width: 380px;
+    height: 550px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+}
+
+.flip-box2-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-box2:hover .flip-box2-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-box2-front,
+.flip-box2-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-box2-front {
+    background-color: #bbb;
+    background-image: url("../images/home/yala\ National\ park\ \(2\).jpg");
+    color: black;
+}
+
+.flip-box2-back {
+    background-color: dodgerblue;
+    background-image: url("../images/home/2.jpg");
+    color: white;
+    transform: rotateY(180deg);
+}
+
+
+/* flip box 3 */
+
+.flip-box3 {
+    background-color: transparent;
+    width: 380px;
+    height: 550px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+}
+
+.flip-box3-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-box3:hover .flip-box3-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-box3-front,
+.flip-box3-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-box3-front {
+    background-color: #bbb;
+    background-image: url("../images/home/yala\ National\ park-002.jpg");
+    color: black;
+}
+
+.flip-box3-back {
+    background-color: dodgerblue;
+    background-image: url("../images/home/3.jpg");
+    color: white;
+    transform: rotateY(180deg);
+}
+
+
+/* table */
+
+table,
+td,
+th,
+tr {
+    border: 0.1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 70%;
+}
+
+#tables {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#tables td,
+#customers th {
+    border: 0.1px solid rgb(0, 0, 0);
+    padding: 8px;
+}
+
+#tables tr:nth-child(even) {
+    background-color: #f0f8ff;
+}
+
+#tables td:hover {
+    background-color: grey;
+}
+
+#tables th:hover {
+    background-color: black;
+}
+
+#tables th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 70px;
+    text-align: left;
+    background-color: cadetBlue;
+    color: white;
+}
+
+#tables td {
+    padding-left: 90px;
+}
+
+.column {
+    float: left;
+    width: 30%;
+    padding: 0px;
+    margin-left: 37px;
+    margin-right: auto;
+}
+
+
+/* Clearfix (clear floats) */
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.mySlides {
+    margin-top: 5%;
+    display: block;
+    width: 91.5%;
+}
+
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --varyDarkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --veryLightGray: hsl(0, 0%, 98%);
+    --weight1: 200;
+    --weight2: 400;
+    --weight3: 600;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.box p {
+    color: var(--grayishBlue);
+}
+
+.box {
+    border-radius: 5px;
+    box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+    padding: 30px;
+    margin: 20px;
+    width: 20%;
+    background-color: #f3efcc;
+}
+
+.cyan {
+    border-top: 3px solid var(--cyan);
+}
+
+.red {
+    border-top: 3px solid var(--red);
+}
+
+.blue {
+    border-top: 3px solid var(--blue);
+}
+
+.orange {
+    border-top: 3px solid var(--orange);
+}
+
+h2 {
+    color: var(--varyDarkBlue);
+    font-weight: var(--weight3);
+}
+
+.cont {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    background-color: transparent;
+}

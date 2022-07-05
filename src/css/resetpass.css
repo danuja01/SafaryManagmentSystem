@@ -1,0 +1,124 @@
+body {
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f9f3df;
+}
+
+.alert {
+    display: none;
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.error {
+    color: red;
+}
+
+.alert {
+    display: none;
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+#er {
+    display: block;
+}
+
+.mmm {
+    display: none;
+}
+
+.header {
+    border-bottom: none;
+    /* padding-left: 3%; */
+    /* padding-right: 3%; */
+    height: 140px;
+    overflow: hidden;
+    background-color: #152d35;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.logo {
+    display: block;
+    /* margin-bottom: 0px; */
+    width: 10% !important;
+}
+
+.footer {
+    border-bottom: none;
+    /* padding-left: 3%; */
+    /* padding-right: 3%; */
+    height: 140px;
+    overflow: hidden;
+    color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #152d35;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.form-popup {
+    margin-left: 30%;
+}
+
+button {
+    background-color: #152d35;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
